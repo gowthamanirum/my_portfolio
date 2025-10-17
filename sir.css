@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --mainColor: #80a1ba;
+  --textColor: #fff7dd;
+}
+#navbar {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  background-color: var(--mainColor);
+}
+.logo {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--textColor);
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* background-color: rgba(255, 0, 0, 0.602); */
+}
+.navlists {
+  width: 60%;
+  height: 100%;
+  /* background-color: cadetblue; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+.navlists > li > a {
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.navlists > li > a:hover {
+  color: var(--textColor);
+  transition: all 0.5s;
+  text-decoration: underline;
+}
+.downloadBtn {
+  width: 20%;
+  height: 100%;
+  /* background-color: crimson; */
+}
+.downloadBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.downloadBtn > button {
+  padding: 12px 30px;
+  border-radius: 10px;
+  background-color: var(--textColor);
+  border: none;
+  font-size: 14 px;
+  font-weight: 600;
+}
+.downloadBtn > button:hover {
+  background-color: transparent;
+  border: 2px solid var(--textColor);
+  transition: all 0.5s;
+}
+
+/* Home page starts here */
+#home {
+  height: calc(100vh - 70px);
+  width: 100%;
+  /* border: 2px solid coral; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#home > .details {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  padding-left: 90px;
+  gap: 22px;
+}
+#home > .imgSection {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imgSection > img {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+}
+#career {
+  color: #80a1ba;
+}
+
+.details > :first-child {
+  background-color: var(--mainColor);
+  padding: 4px 20px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.details > h1 {
+  font-size: 60px;
+}
+
+.details > p {
+  font-size: 17px;
+  text-align: justify;
+}
+
+.btn > button {
+  padding: 10px 25px;
+  border: 2px solid var(--mainColor);
+  border-radius: 7px;
+  cursor: pointer;
+}
+.btn > :first-child {
+  background-color: var(--mainColor);
+}
+
+.btn > :first-child:hover {
+  background-color: transparent;
+  transition: ease-in-out 0.8s;
+}
+
+.btn > :last-child:hover {
+  background-color: var(--mainColor);
+  transition: ease-in-out 0.8s;
+}
+
+#icons {
+  font-size: 30px;
+}
+#icons > i {
+  margin: 8px;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./sir.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"
+      integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="portfolio">
+      <!-- Navbar starts here -->
+      <header>
+        <nav id="navbar">
+          <div class="logo">Gowthaman...</div>
+
+          <ul class="navlists">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+
+          <div class="downloadBtn">
+            <button>Download CV</button>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Home Page starts here -->
+      <section id="home">
+        <div class="details">
+          <span>Gowthaman</span>
+          <h1>
+            I'm <br />
+            <span id="career"></span>
+          </h1>
+          <p>
+            I am a web developer
+          </p>
+          <div class="btn">
+            <button>Hire Me</button>
+            <button>Download CV</button>
+          </div>
+          <div id="icons">
+            <i class="fa-brands fa-square-linkedin"></i>
+            <i class="fa-brands fa-square-github"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-jira"></i>
+          </div>
+        </div>
+        <!-- Image -->
+        <div class="imgSection">
+          <img
+            src="./Assets/IMG-20250613-WA0011.jpg "
+            alt="my photo" />
+        </div>
+      </section>
+    </div>
+    <script>
+      var typed2 = new Typed("#career", {
+        strings: [
+          "Software Developer",
+          "Web Designer",
+          "UI and UX Designer",
+          "React-Developer",
+          "Acting",
+        ],
+        typeSpeed: 60,
+        backSpeed: 40,
+        backDelay: 1500,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>

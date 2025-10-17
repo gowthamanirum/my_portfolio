@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./portfolio.css">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"
+      integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="portfolio">
+        <header>
+            <nav class="navbar">
+                <!-- 1 -->
+                <div class="navbar__logo --make-center">Gowthaman</div>
+                <!-- 2 -->
+                <ul class="navbar__menu --make-center" >
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contacts</a></li>
+                </ul>
+                <!-- 3 -->
+                <div class="navbar__btn --make-center"><button class="nav-button" >Download CV</button></div>
+        </nav>
+        </header>
+    </div>
+
+    <!-- Home Page -->
+    <section id="home">
+        <div class="details">
+        <span>Gowthaman</span>
+        <h1>I'm <br>
+            <span id="port"></span>
+        </h1>
+        <p>
+            I am an software developer with a passion for creating innovative solutions. With expertise in various programming languages and frameworks, I strive to build efficient and user-friendly applications that make a difference.
+        </p>
+            <button class="home-button">Hire Me</button>
+            <button class="home-button">Downlaod CV</button>
+        <div id="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-github"></i> 
+        </div>
+        </div>
+         <!-- image -container -->
+        <div class="imgsec">
+            <img src="./Assets/IMG-20250613-WA0011.jpg" width="400px" height="400px" alt="myphoto" class="sec-img">
+        </div>
+    </section>
+
+    <!-- About Me -->
+
+    <div class="about1">
+        <h1 class="abouth">About Me</h1>
+         <!-- 1st child -->
+        <div class="aboutm">
+           <h2>My Introduction</h2>
+           <p>Enthusiastic Software Developer skilled in Java, HTML, and CSS with a strong academic background in Mathematics and Computer Applications. Dedicated to learning new technologies and developing efficient, high-quality software solutions.</p>
+           <button>Download CV</button>
+        </div>
+
+        <!-- 2nd child -->
+        <div>
+            <div>
+                <h1>Frontend</h1>
+                <span>HTML</span>
+                <span>CSS</span>
+            </div>
+            <div>
+                <h1>Backend</h1>
+                <span>java</span>
+                <span>JavaScript</span>
+            </div>
+            <div>
+                <h1>DataBase</h1>
+                <Span>SQL</Span>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        var typed = new Typed("#port",{
+            strings: ["A Frontend developer","A Backend Developer","A Gamer"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true,
+            showCursor: true,
+            cursorChar: '🐺'
+        });
+        </script>
+</body>
+</html>
